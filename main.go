@@ -37,7 +37,7 @@ func generateSignature(data meetingData) string {
 
 	var hash = base64.StdEncoding.EncodeToString(h.Sum(nil))
 
-	var sigNatureStr = data.APISecret + "." + data.MeetingNumber + "." + timeStampStr + "." + data.Role + "." + hash
+	var sigNatureStr = data.APIKey + "." + data.MeetingNumber + "." + timeStampStr + "." + data.Role + "." + hash
 	sEnc = base64.StdEncoding.EncodeToString([]byte(sigNatureStr))
 	return sEnc
 }
