@@ -1,5 +1,5 @@
 # zoom-signature-generator
-A simple golang project used for generating zoom API signature key.
+Zoom SDK Signature Generator for Golang.
 
 You can test the code from  [here.](https://play.golang.org/p/erYqbiVqRjI "Go Playgrounds") 
 
